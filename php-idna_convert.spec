@@ -5,7 +5,7 @@
 Summary:	PHP class to encode/decode IDN
 Name:		php-%{pkgname}
 Version:	0.6.3
-Release:	1
+Release:	2
 License:	LGPL v2.1
 Group:		Development/Languages/PHP
 Source0:	http://phlymail.com/download/Goodies/idna_convert_%{ver}.zip
@@ -14,9 +14,9 @@ URL:		http://www.charset.org/punycode.php
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.461
 BuildRequires:	unzip
+Requires:	php(mbstring)
+Requires:	php(pcre)
 Requires:	php-common >= 4:%{php_min_version}
-Requires:	php-mbstring
-Requires:	php-pcre
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

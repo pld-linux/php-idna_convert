@@ -4,13 +4,13 @@
 %define		ver		%(echo %{version} | tr -d .)
 Summary:	PHP class to encode/decode IDN
 Name:		php-%{pkgname}
-Version:	0.6.3
-Release:	3
+Version:	0.9.0
+Release:	1
 License:	LGPL v2.1
 Group:		Development/Languages/PHP
-Source0:	http://phlymail.com/download/Goodies/idna_convert_%{ver}.zip
-# Source0-md5:	142bf88fb10a3a7a64238dd4b0226def
-URL:		http://www.charset.org/punycode.php
+Source0:	https://phlymail.com/download/Goodies/idna_convert_%{ver}.zip
+# Source0-md5:	2657de643b847be40dab1e447e549cf0
+URL:		https://phlymail.com/en/downloads/idna-convert.html
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.461
 BuildRequires:	unzip
